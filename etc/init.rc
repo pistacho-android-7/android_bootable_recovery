@@ -108,6 +108,14 @@ service healthd /sbin/healthd -r
     critical
     seclabel u:r:healthd:s0
 
+service console /system/bin/sh
+    class core
+    console
+    disabled
+    user root
+    group root shell log readproc
+    seclabel u:r:shell:s0
+
 service adbd /sbin/adbd --root_seclabel=u:r:su:s0 --device_banner=recovery
     disabled
     socket adbd stream 660 system system
