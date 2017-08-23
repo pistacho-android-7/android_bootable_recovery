@@ -225,7 +225,6 @@ ifneq ($(TW_USE_TOOLBOX), true)
     LOCAL_SRC_FILES += \
         ../../../$(TWRP_TOOLBOX_PATH)/getprop.c \
         ../../../$(TWRP_TOOLBOX_PATH)/setprop.c \
-        ../../../$(TWRP_TOOLBOX_PATH)/ls.c
     OUR_TOOLS += getprop setprop
 endif
 endif
